@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/201a77ebca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="card">
+        <form >
+            <h1 class="card__title">
+                Enter Payment Information
+            </h1>
+            <div class="card__row">
+                <div class="card__col">
+                    <label for="cardNumber" class="card__label">
+                        Card Number
+                    </label>
+                    <input type="text" class="card__input card__input--large" id="cardNumber" placeholder="xxxx-xxxx-xxx">
+                </div>
+                <div class="card__col card__chip">
+                    <img src="img/chip.svg" alt="">
+                </div>
+            </div>
+            <div class="card__row">
+                <div class="card__col">
+                    <label for="cardExpiry" class="card__label">
+                        Expiry Date
+                    </label>
+                    <input type="text" class="card__input" id="cardExpiry" placeholder="xx/xx">
+                </div>
+                <div class="card__col">
+                    <label for="cardCcv" class="card__label">
+                        CCV
+                    </label>
+                    <input type="text" class="card__input" id="cardCcv" placeholder="xxx">
+                </div>
+                <div class="card__col card__brand">
+                    <i id="card__brand" class=""></i>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
